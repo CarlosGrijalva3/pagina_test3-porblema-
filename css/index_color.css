@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra todo horizontalmente */
+  background-color: #312D22;
+}
+
+:root {
+  --color-principal: #312D22;
+  --color-secundario: #736C58;
+  --color-terciario: #C9C1B8;
+    --color-texto: #C9C1B8;
+}
+
+
+h1 {
+  color: var(--color-secundario);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Centrar el formulario */
+.form-centro {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* centra los elementos dentro del form */
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  padding: 5px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*BOTONES TYPE*/
+input[type="text"] {
+  border: 1px solid var(--color-secundario);   /* color del borde */
+  background-color: var(--color-secundario); /* fondo */
+  /*color del de placeholder */
+  color: var(--color-texto);              /* texto blanco */
+  border-radius: 8px;       /* esquinas redondeadas */
+  padding: 8px;             /* espacio interno */
+  font-size: 14px;          /* tamaño de letra */
+  cursor: pointer;              /* cambia el cursor */
+
+  /*outline: none;            /* quita el borde azul por defecto */
+}
+
+/* estilo del placeholder */
+input::placeholder {
+  color: #BEB4AA;        /* color del texto del placeholder */
+  font-style: italic; /* opcional: ponerlo en cursiva */
+  opacity: 1;         /* asegurar que no se vea transparente */
+}
+/* cuando el input está en foco (clic dentro) 
+input[type="text"]:focus {
+  border-color: #007bff;    /* cambia color al seleccionar 
+  box-shadow: 0 0 5px rgba(0,123,255,0.5); /* efecto brillito 
+}
+*/
+
+/*BOTONES SELECC*/
+select {
+  border: 2px solid var(--color-secundario);       /* color del borde */
+  border-radius: 8px;           /* esquinas redondeadas */
+  color: var(--color-texto);                /* texto */
+  padding: 8px;                 /* espacio interno */
+  font-size: 14px;              /* tamaño de texto */
+  background-color: var(--color-secundario);       /* fondo */
+  cursor: pointer;              /* cambia el cursor */
+  /*outline: none;                /* quita borde azul feo */
+}
+
+/* cuando haces clic 
+select:focus {
+  border-color: #007bff;        /* cambia color del borde 
+  box-shadow: 0 0 5px rgba(0,123,255,0.5); /* brillito 
+}
+*/
+
+/*BOTONES REGISTRO*/
+button {
+  background-color: var(--color-secundario);   /* color azul */
+  color: var(--color-texto);                /* texto blanco */
+  border: none;                /* sin borde feo */
+  border-radius: 8px;          /* esquinas redondeadas */
+  padding: 10px 20px;          /* espacio interno */
+  /*font-size: 14px;             /* tamaño de texto */
+  cursor: pointer;             /* cambia cursor */
+  /*transition: background-color 0.3s ease, transform 0.2s ease;*/
+}
+
+
+
+
+.separador {
+  height: 5px;               /* grosor */
+  background-color: var(--color-secundario);    /* color */
+  width: 52%;                /* largo */
+  margin: 20px auto;         /* centrado y espacio arriba/abajo */
+}
+
+
+/* Tarjetas de registro centradas */
+.tarjeta {
+  border: 2px solid var(--color-terciario);
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: var(--color-terciario);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra contenido dentro de la tarjeta */
+}
+
+/* Cada fila dentro de la tarjeta */
+.fila {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* para que ocupe todo el ancho de la tarjeta */
+  margin-bottom: 5px;
+}
+/*
+.fila span {
+  min-width: 120px;
+}
+*/
+@font-face {
+  font-family: 'MiFuente';
+  src: url('/fonts/cabritoseminormmedium.otf') format('truetype');
+}
+
+body {
+  font-family: 'MiFuente', sans-serif;
+}
